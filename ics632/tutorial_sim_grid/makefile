@@ -2,28 +2,27 @@ CC=smpicc
 CFLAGS= -O3
 
 RUN=smpirun
-NP=-np 5
+NP=-np 9
 HOSTFILE=-hostfile ./simple_cluster_hostfile.txt
 PLATFORM=-platform ./simple_cluster.xml
-NUMROW=1000
+NUMROW=300
 
-all: 1D_parallel_julia
+all: 1D_parallel_julia 2D_parallel_julia
 
-basic: CFLAGS += -D BASIC
-basic: exercise1
+1D_parallel_julia: 1D_parallel_julia.c
+	$(CC) $(CFLAGS) 1D_parallel_julia.c -o 1D_parallel_julia 
 
-tiled: CFLAGS += -D TILED
-tiled: exercise1
+2D_parallel_julia: 2D_parallel_julia.c
+	$(CC) $(CFLAGS) 2D_parallel_julia.c -o 2D_parallel_julia 
 
-1D_parallel_julia: 1D_parallel_julia.o
-	$(CC) 1D_parallel_julia.o -o 1D_parallel_julia
+run_1D:
+	$(RUN) $(NP) $(HOSTFILE) $(PLATFORM) ./1D_parallel_julia $(NUMROW)
+run_2D:
+	$(RUN) $(NP) $(HOSTFILE) $(PLATFORM) ./2D_parallel_julia $(NUMROW)
 
-exercise1.o: 1D_parallel_julia.c
-	$(CC) $(CFLAGS) $(PFLAGS) 1D_parallel_julia.c 
-
-run:
-	$(RUN)
 clean:
 	rm *.o
 real_clean:
-	rm exercise1
+	rm 1D_parallel_julia 2D_parallel_julia
+clean_data:
+	rm julia.bmp

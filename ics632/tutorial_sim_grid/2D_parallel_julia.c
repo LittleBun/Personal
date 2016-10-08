@@ -162,7 +162,7 @@ int main(int argc, char **argv) {
   int rowStop = (myRank[0]+1)*height/num_procs_1d+(myRank[0]<hRemainder)-1;
   int colStart = myRank[1]*width/num_procs_1d;
   int colStop = (myRank[1]+1)*width/num_procs_1d+(myRank[1]<wRemainder)-1;
-  printf("[Process rank %d]: my 2-D rank is (%d, %d), my tile is [%d:%d, %d:%d]\n", myrank, myRank[0], myRank[1], rowStart, rowStop, colStart, colStop);
+  //printf("[Process rank %d]: my 2-D rank is (%d, %d), my tile is [%d:%d, %d:%d]\n", myrank, myRank[0], myRank[1], rowStart, rowStop, colStart, colStop);
   //printf("width=%d, num_procs_1d=%d\n", width, num_procs_1d);
 
   // Allocate array
@@ -191,7 +191,7 @@ int main(int argc, char **argv) {
   int preRank,nextRank;//previous process, next process
   for (y=0; y < myHeight; y++) {
      for (x=0; x < myWidth; x++) {
-        if(myrank ==0 && y==0 && x==0){  //rank 0 and first row, open the picture
+        if(myrank ==0 && y==0 && x==0){  //rank 0 and first row, create the picture
            f = fopen("./julia.bmp", "w");
            // Write header
            if (write_bmp_header(f, width, height)) {
@@ -200,8 +200,8 @@ int main(int argc, char **argv) {
            }
            fwrite(&(pixels[y * 3 * myWidth + x * 3]), sizeof(char), 3, f);
         }else{
-           if(x == colStart){
-              if(myRank[1] == 0 && y != rowStart) preRank = myrank+num_procs_1d-1;
+           if(x == 0){     //new tile wait for pre rank 
+              if(myRank[1] == 0 && y != 0) preRank = myrank+num_procs_1d-1;
               else preRank = myrank-1;
               MPI_Recv(data,1,MPI_INT, preRank,0,MPI_COMM_WORLD, &status);
               f = fopen("./julia.bmp", "a");
@@ -211,23 +211,19 @@ int main(int argc, char **argv) {
            //////////////////////////////////////////////
            //segmentation fault at rank 1, first pixels//
            //////////////////////////////////////////////
-           if(myrank == 1) {
-              printf("x=%d, y=%d\n", x, y);
-              printf("%c\n", pixels[y*3*myWidth+x*3]);
-           }
            fwrite(&(pixels[y * 3 * myWidth + x * 3]), sizeof(char), 3, f);
 
            // padding in case of an even number of pixels per row
            unsigned char padding[3] = {0,0,0};
            fwrite(padding, sizeof(char), ((myWidth * 3) % 4), f);
 
-           if(x == colStop){
+           if(x == myWidth-1){      // last local colom
 
               // Close the file
               fclose(f);
 
-              if(myrank != num_procs-1 || y!=myHeight-1 || x!=myWidth-1) {
-                 if(myRank[1]==num_procs_1d-1 && y!=rowStop) nextRank = myrank-num_procs_1d+1;
+              if(myrank != num_procs-1 || y!=myHeight-1) {     //if not the last tile last row
+                 if(myRank[1]==num_procs_1d-1 && y!=myHeight-1) nextRank = myrank-num_procs_1d+1;
                  else nextRank = myrank+1;
                  MPI_Send(data,1,MPI_INT, nextRank,0,MPI_COMM_WORLD);
               }
@@ -239,5 +235,3 @@ int main(int argc, char **argv) {
   MPI_Finalize();
   return 0;
 }
-
-
