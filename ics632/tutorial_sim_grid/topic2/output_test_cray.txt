@@ -1,0 +1,80 @@
+number of host: 50
+implementation: default_bcast | chunksize: 1000000 |  time: 5.714 seconds
+number of host: 50
+implementation: default_bcast | chunksize: 1000000 |  time: 3.701 seconds
+number of host: 50
+implementation: default_bcast | chunksize: 1000000 |  time: 3.277 seconds
+number of host: 50
+implementation: default_bcast | chunksize: 1000000 |  time: 3.209 seconds
+number of host: 50
+implementation: default_bcast | chunksize: 1000000 |  time: 3.226 seconds
+number of host: 50
+implementation: default_bcast | chunksize: 1000000 |  time: 3.252 seconds
+number of host: 50
+implementation: default_bcast | chunksize: 1000000 |  time: 3.273 seconds
+number of host: 50
+implementation: default_bcast | chunksize: 1000000 |  time: 3.209 seconds
+number of host: 50
+implementation: default_bcast | chunksize: 1000000 |  time: 3.252 seconds
+number of host: 50
+implementation: default_bcast | chunksize: 1000000 |  time: 3.231 seconds
+number of host: 50
+implementation: naive_bcast | chunksize: 1000000 |  time: 28.896 seconds
+number of host: 50
+implementation: naive_bcast | chunksize: 1000000 |  time: 26.747 seconds
+number of host: 50
+implementation: naive_bcast | chunksize: 1000000 |  time: 26.797 seconds
+number of host: 50
+implementation: naive_bcast | chunksize: 1000000 |  time: 26.789 seconds
+number of host: 50
+implementation: naive_bcast | chunksize: 1000000 |  time: 26.678 seconds
+number of host: 50
+implementation: naive_bcast | chunksize: 1000000 |  time: 26.791 seconds
+number of host: 50
+implementation: naive_bcast | chunksize: 1000000 |  time: 28.969 seconds
+number of host: 50
+implementation: naive_bcast | chunksize: 1000000 |  time: 26.758 seconds
+number of host: 50
+implementation: naive_bcast | chunksize: 1000000 |  time: 26.744 seconds
+number of host: 50
+implementation: naive_bcast | chunksize: 1000000 |  time: 26.794 seconds
+number of host: 50
+implementation: asynchronous_pipelined_ring_bcast | chunksize: 1000000 |  time: 1.895 seconds
+number of host: 50
+implementation: asynchronous_pipelined_ring_bcast | chunksize: 1000000 |  time: 1.861 seconds
+number of host: 50
+implementation: asynchronous_pipelined_ring_bcast | chunksize: 1000000 |  time: 1.895 seconds
+number of host: 50
+implementation: asynchronous_pipelined_ring_bcast | chunksize: 1000000 |  time: 1.881 seconds
+number of host: 50
+implementation: asynchronous_pipelined_ring_bcast | chunksize: 1000000 |  time: 1.891 seconds
+number of host: 50
+implementation: asynchronous_pipelined_ring_bcast | chunksize: 1000000 |  time: 1.887 seconds
+number of host: 50
+implementation: asynchronous_pipelined_ring_bcast | chunksize: 1000000 |  time: 1.892 seconds
+number of host: 50
+implementation: asynchronous_pipelined_ring_bcast | chunksize: 1000000 |  time: 1.894 seconds
+number of host: 50
+implementation: asynchronous_pipelined_ring_bcast | chunksize: 1000000 |  time: 1.830 seconds
+number of host: 50
+implementation: asynchronous_pipelined_ring_bcast | chunksize: 1000000 |  time: 1.893 seconds
+number of host: 50
+implementation: asynchronous_pipelined_bintree_bcast | chunksize: 1000000 |  time: 8.097 seconds
+number of host: 50
+implementation: asynchronous_pipelined_bintree_bcast | chunksize: 1000000 |  time: 8.649 seconds
+number of host: 50
+implementation: asynchronous_pipelined_bintree_bcast | chunksize: 1000000 |  time: 8.613 seconds
+number of host: 50
+implementation: asynchronous_pipelined_bintree_bcast | chunksize: 1000000 |  time: 8.069 seconds
+number of host: 50
+implementation: asynchronous_pipelined_bintree_bcast | chunksize: 1000000 |  time: 8.634 seconds
+number of host: 50
+implementation: asynchronous_pipelined_bintree_bcast | chunksize: 1000000 |  time: 8.646 seconds
+number of host: 50
+implementation: asynchronous_pipelined_bintree_bcast | chunksize: 1000000 |  time: 8.627 seconds
+number of host: 50
+implementation: asynchronous_pipelined_bintree_bcast | chunksize: 1000000 |  time: 7.873 seconds
+number of host: 50
+implementation: asynchronous_pipelined_bintree_bcast | chunksize: 1000000 |  time: 8.636 seconds
+number of host: 50
+implementation: asynchronous_pipelined_bintree_bcast | chunksize: 1000000 |  time: 8.347 seconds
