@@ -197,9 +197,9 @@ int main(int argc, char *argv[])
             MPI_Recv(buffer+j, chunk_size, MPI_CHAR, rank-1, tag, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
             if (rank != num_procs-1) {
                MPI_Isend(buffer+j, chunk_size, MPI_CHAR, rank+1, tag, MPI_COMM_WORLD, &request);
-               MPI_Wait(&request, MPI_STATUS_IGNORE);
             }
          }
+         MPI_Wait(&request, MPI_STATUS_IGNORE);
       }
    } else if (strcmp(bcast_implementation_name, "asynchronous_pipelined_bintree_bcast") == 0) {
       MPI_Request request[2];
@@ -214,8 +214,8 @@ int main(int argc, char *argv[])
          if (rank*2+2 < num_procs) {
             MPI_Isend(buffer+j, chunk_size, MPI_CHAR, rank*2+2, tag, MPI_COMM_WORLD, &request[1]);
          }
-         MPI_Waitall(2, request, MPI_STATUS_IGNORE);
       }
+      MPI_Waitall(2, request, MPI_STATUS_IGNORE);
 
    } else {
    }
