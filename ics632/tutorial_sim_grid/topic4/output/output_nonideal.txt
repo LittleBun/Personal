@@ -1,0 +1,60 @@
+N = 1600 | p = 1 | compute time: 0.0886521167 seconds
+The sum is 5.23633e+15
+N = 1600 | p = 1 | compute time: 0.0921844421 seconds
+The sum is 5.23633e+15
+N = 1600 | p = 1 | compute time: 0.0896396667 seconds
+The sum is 5.23633e+15
+N = 1600 | p = 1 | compute time: 0.0908306458 seconds
+The sum is 5.23633e+15
+N = 1600 | p = 1 | compute time: 0.0902281750 seconds
+The sum is 5.23633e+15
+N = 1600 | p = 4 | compute time: 0.0233054492 seconds
+The sum is 5.23633e+15
+N = 1600 | p = 4 | compute time: 0.0231706262 seconds
+The sum is 5.23633e+15
+N = 1600 | p = 4 | compute time: 0.0235387976 seconds
+The sum is 5.23633e+15
+N = 1600 | p = 4 | compute time: 0.0233493921 seconds
+The sum is 5.23633e+15
+N = 1600 | p = 4 | compute time: 0.0227481531 seconds
+The sum is 5.23633e+15
+N = 1600 | p = 16 | compute time: 0.0047576758 seconds
+The sum is 5.23633e+15
+N = 1600 | p = 16 | compute time: 0.0048480286 seconds
+The sum is 5.23633e+15
+N = 1600 | p = 16 | compute time: 0.0050705774 seconds
+The sum is 5.23633e+15
+N = 1600 | p = 16 | compute time: 0.0045757153 seconds
+The sum is 5.23633e+15
+N = 1600 | p = 16 | compute time: 0.0048010071 seconds
+The sum is 5.23633e+15
+N = 1600 | p = 64 | compute time: 0.0037857690 seconds
+The sum is 5.23633e+15
+N = 1600 | p = 64 | compute time: 0.0036403699 seconds
+The sum is 5.23633e+15
+N = 1600 | p = 64 | compute time: 0.0035607410 seconds
+The sum is 5.23633e+15
+N = 1600 | p = 64 | compute time: 0.0036868262 seconds
+The sum is 5.23633e+15
+N = 1600 | p = 64 | compute time: 0.0036521521 seconds
+The sum is 5.23633e+15
+N = 1600 | p = 100 | compute time: 0.0037257471 seconds
+The sum is 5.23633e+15
+N = 1600 | p = 100 | compute time: 0.0037298291 seconds
+The sum is 5.23633e+15
+N = 1600 | p = 100 | compute time: 0.0038854333 seconds
+The sum is 5.23633e+15
+N = 1600 | p = 100 | compute time: 0.0037967651 seconds
+The sum is 5.23633e+15
+N = 1600 | p = 100 | compute time: 0.0037590295 seconds
+The sum is 5.23633e+15
+N = 1600 | p = 400 | compute time: 0.0065467444 seconds
+The sum is 5.23633e+15
+N = 1600 | p = 400 | compute time: 0.0065610547 seconds
+The sum is 5.23633e+15
+N = 1600 | p = 400 | compute time: 0.0065419202 seconds
+The sum is 5.23633e+15
+N = 1600 | p = 400 | compute time: 0.0065518005 seconds
+The sum is 5.23633e+15
+N = 1600 | p = 400 | compute time: 0.0065536792 seconds
+The sum is 5.23633e+15

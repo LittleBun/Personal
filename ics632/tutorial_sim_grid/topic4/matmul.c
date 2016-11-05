@@ -7,7 +7,8 @@
 
 //#define DEBUG
 #define E 1.1
-#define FLOP_CALIBRATION_FACTOR 100000000
+#define FLOP_CALIBRATION_FACTOR 0.572   // 0.04640435 seconds
+
 ///////////////////////////////////////////////////////
 //// program_abort() and print_usage() functions //////
 ///////////////////////////////////////////////////////
@@ -121,6 +122,7 @@ int main(int argc, char *argv[])
    double *bufferB;
 
    
+   /*
    if ((A = malloc(sizeof(double) * local_size*local_size)) == NULL ||
          (B = malloc(sizeof(double) * local_size*local_size)) == NULL ||
          (C = calloc(local_size*local_size, sizeof(double))) == NULL ||
@@ -128,7 +130,7 @@ int main(int argc, char *argv[])
          (bufferB = malloc(sizeof(double) * local_size*local_size)) == NULL ) {
       program_abort(argv[0],"Out of memory!");
    }
-   /* 
+   */
    if ((A = SMPI_SHARED_MALLOC(sizeof(double) * local_size*local_size)) == NULL ||
          (B = SMPI_SHARED_MALLOC(sizeof(double) * local_size*local_size)) == NULL ||
          (C = SMPI_SHARED_MALLOC(sizeof(double) * local_size*local_size)) == NULL ||
@@ -136,7 +138,6 @@ int main(int argc, char *argv[])
          (bufferB = SMPI_SHARED_MALLOC(sizeof(double) * local_size*local_size)) == NULL ) {
       program_abort(argv[0],"Out of memory!");
    }
-*/
    // Create cartesian virtual topology, get rank, coordinates, neighbor ranks
    int dims[2] = {sqrt_num_procs, sqrt_num_procs};
    int periods[2] = {0, 0};
@@ -238,11 +239,10 @@ int main(int argc, char *argv[])
       if (rank == 0) {
          start_time = MPI_Wtime();
       }
-      /*
-      double flops = (double)size * (double) FLOP_CALIBRATION_FACTOR;
+      double flops = (double)size*(double)size*(double)size * (double) FLOP_CALIBRATION_FACTOR;
       SMPI_SAMPLE_FLOPS(flops) {
       }
-      */
+      /*
       if ((coords[0] == k) && (coords[1] == k)) {
          mat_mul(A, B, C, local_size);
       } else if (coords[0] == k) {
@@ -252,6 +252,7 @@ int main(int argc, char *argv[])
       } else {
          mat_mul(bufferA, bufferB, C, local_size);
       }
+      */
       MPI_Barrier(MPI_COMM_WORLD);
       MPI_Barrier(cartcomm);
       MPI_Barrier(row_comm);
@@ -262,14 +263,12 @@ int main(int argc, char *argv[])
    }
 
    if (0 == rank) {
-#ifdef CP
       fprintf(stdout, "N = %d | p = %d | compute time: %.10lf seconds\n",
             size, num_procs, compute_time);
-#endif
-#ifdef CM
+      /*
       fprintf(stdout, "N = %d | p = %d | comm time: %.10lf seconds\n",
             size, num_procs, comm_time);
-#endif
+            */
    }
 
    // Sum output for each process
@@ -317,7 +316,6 @@ MPI_Barrier(cartcomm);
 MPI_Barrier(row_comm);
 MPI_Barrier(col_comm);
 
-/*
 MPI_Comm_free(&row_comm);
 MPI_Comm_free(&col_comm);
 SMPI_SHARED_FREE(A);
@@ -325,12 +323,13 @@ SMPI_SHARED_FREE(B);
 SMPI_SHARED_FREE(C);
 SMPI_SHARED_FREE(bufferA);
 SMPI_SHARED_FREE(bufferB);
-*/
+/*
 free(A);
 free(B);
 free(C);
 free(bufferA);
 free(bufferB);
+*/
 MPI_Finalize();
 
 return 0;

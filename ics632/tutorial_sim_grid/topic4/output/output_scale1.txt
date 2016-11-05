@@ -1,0 +1,90 @@
+N = 800 | p = 100 | compute time: 0.0032733142 seconds
+The sum is 1.63431e+14
+N = 800 | p = 100 | compute time: 0.0032839832 seconds
+The sum is 1.63431e+14
+N = 800 | p = 100 | compute time: 0.0032576355 seconds
+The sum is 1.63431e+14
+N = 800 | p = 100 | compute time: 0.0032603259 seconds
+The sum is 1.63431e+14
+N = 800 | p = 100 | compute time: 0.0032576819 seconds
+The sum is 1.63431e+14
+N = 1600 | p = 100 | compute time: 0.0037552026 seconds
+The sum is 5.23633e+15
+N = 1600 | p = 100 | compute time: 0.0036799634 seconds
+The sum is 5.23633e+15
+N = 1600 | p = 100 | compute time: 0.0037586584 seconds
+The sum is 5.23633e+15
+N = 1600 | p = 100 | compute time: 0.0037717163 seconds
+The sum is 5.23633e+15
+N = 1600 | p = 100 | compute time: 0.0037936804 seconds
+The sum is 5.23633e+15
+N = 2400 | p = 100 | compute time: 0.0056665527 seconds
+The sum is 3.97799e+16
+N = 2400 | p = 100 | compute time: 0.0055946912 seconds
+The sum is 3.97799e+16
+N = 2400 | p = 100 | compute time: 0.0054067322 seconds
+The sum is 3.97799e+16
+N = 2400 | p = 100 | compute time: 0.0054932202 seconds
+The sum is 3.97799e+16
+N = 2400 | p = 100 | compute time: 0.0053922302 seconds
+The sum is 3.97799e+16
+N = 3200 | p = 100 | compute time: 0.0081952698 seconds
+The sum is 1.67667e+17
+N = 3200 | p = 100 | compute time: 0.0081440210 seconds
+The sum is 1.67667e+17
+N = 3200 | p = 100 | compute time: 0.0082304858 seconds
+The sum is 1.67667e+17
+N = 3200 | p = 100 | compute time: 0.0083873975 seconds
+The sum is 1.67667e+17
+N = 3200 | p = 100 | compute time: 0.0080842053 seconds
+The sum is 1.67667e+17
+N = 4000 | p = 100 | compute time: 0.0123504236 seconds
+The sum is 5.11744e+17
+N = 4000 | p = 100 | compute time: 0.0126929285 seconds
+The sum is 5.11744e+17
+N = 4000 | p = 100 | compute time: 0.0123321155 seconds
+The sum is 5.11744e+17
+N = 4000 | p = 100 | compute time: 0.0122828992 seconds
+The sum is 5.11744e+17
+N = 4000 | p = 100 | compute time: 0.0123187793 seconds
+The sum is 5.11744e+17
+N = 4800 | p = 100 | compute time: 0.0184420288 seconds
+The sum is 1.27349e+18
+N = 4800 | p = 100 | compute time: 0.0192682837 seconds
+The sum is 1.27349e+18
+N = 4800 | p = 100 | compute time: 0.0194839734 seconds
+The sum is 1.27349e+18
+N = 4800 | p = 100 | compute time: 0.0197433679 seconds
+The sum is 1.27349e+18
+N = 4800 | p = 100 | compute time: 0.0191125720 seconds
+The sum is 1.27349e+18
+N = 5600 | p = 100 | compute time: 0.0293097095 seconds
+The sum is 2.75268e+18
+N = 5600 | p = 100 | compute time: 0.0292382361 seconds
+The sum is 2.75268e+18
+N = 5600 | p = 100 | compute time: 0.0290186877 seconds
+The sum is 2.75268e+18
+N = 5600 | p = 100 | compute time: 0.0286095398 seconds
+The sum is 2.75268e+18
+N = 5600 | p = 100 | compute time: 0.0291839868 seconds
+The sum is 2.75268e+18
+N = 6400 | p = 100 | compute time: 0.0559681250 seconds
+The sum is 5.36703e+18
+N = 6400 | p = 100 | compute time: 0.0565367798 seconds
+The sum is 5.36703e+18
+N = 6400 | p = 100 | compute time: 0.0493232043 seconds
+The sum is 5.36703e+18
+N = 6400 | p = 100 | compute time: 0.0550880383 seconds
+The sum is 5.36703e+18
+N = 6400 | p = 100 | compute time: 0.0598893799 seconds
+The sum is 5.36703e+18
+N = 7200 | p = 100 | compute time: 0.0802565906 seconds
+The sum is 9.6719e+18
+N = 7200 | p = 100 | compute time: 0.0788509570 seconds
+The sum is 9.6719e+18
+N = 7200 | p = 100 | compute time: 0.0851482874 seconds
+The sum is 9.6719e+18
+N = 7200 | p = 100 | compute time: 0.0806033459 seconds
+The sum is 9.6719e+18
+N = 7200 | p = 100 | compute time: 0.0858451697 seconds
+The sum is 9.6719e+18

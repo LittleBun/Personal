@@ -5,7 +5,7 @@ RUN=smpirun
 NP=-np 4
 HOSTFILE=-hostfile ./hostfile_100.txt
 PLATFORM=-platform ./cluster_crossbar_64.xml
-N=32
+N=1600
 
 all: matmul_init matmul
 

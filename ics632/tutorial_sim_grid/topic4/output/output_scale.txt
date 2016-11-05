@@ -1,0 +1,240 @@
+N = 1000 | p = 100 | compute time: 0.0319565320 seconds
+The sum is 0
+Error!
+N = 1000 | p = 100 | compute time: 0.0320001355 seconds
+The sum is 0
+Error!
+N = 1000 | p = 100 | compute time: 0.0320233752 seconds
+The sum is 0
+Error!
+N = 1000 | p = 100 | compute time: 0.0319951489 seconds
+The sum is 0
+Error!
+N = 1000 | p = 100 | compute time: 0.0320487488 seconds
+The sum is 0
+Error!
+N = 2000 | p = 100 | compute time: 0.2321874487 seconds
+The sum is 0
+Error!
+N = 2000 | p = 100 | compute time: 0.2322153271 seconds
+The sum is 0
+Error!
+N = 2000 | p = 100 | compute time: 0.2321977234 seconds
+The sum is 0
+Error!
+N = 2000 | p = 100 | compute time: 0.2322037305 seconds
+The sum is 0
+Error!
+N = 2000 | p = 100 | compute time: 0.2322215662 seconds
+The sum is 0
+Error!
+N = 3000 | p = 100 | compute time: 0.7756154663 seconds
+The sum is 0
+Error!
+N = 3000 | p = 100 | compute time: 0.7755948010 seconds
+The sum is 0
+Error!
+N = 3000 | p = 100 | compute time: 0.7755670618 seconds
+The sum is 0
+Error!
+N = 3000 | p = 100 | compute time: 0.7755602197 seconds
+The sum is 0
+Error!
+N = 3000 | p = 100 | compute time: 0.7755756665 seconds
+The sum is 0
+Error!
+N = 4000 | p = 100 | compute time: 1.8338172754 seconds
+The sum is 0
+Error!
+N = 4000 | p = 100 | compute time: 1.8337582019 seconds
+The sum is 0
+Error!
+N = 4000 | p = 100 | compute time: 1.8337588745 seconds
+The sum is 0
+Error!
+N = 4000 | p = 100 | compute time: 1.8337557202 seconds
+The sum is 0
+Error!
+N = 4000 | p = 100 | compute time: 1.8337730225 seconds
+The sum is 0
+Error!
+N = 5000 | p = 100 | compute time: 3.5784313538 seconds
+The sum is 0
+Error!
+N = 5000 | p = 100 | compute time: 3.5783761768 seconds
+The sum is 0
+Error!
+N = 5000 | p = 100 | compute time: 3.5783730920 seconds
+The sum is 0
+Error!
+N = 5000 | p = 100 | compute time: 3.5783591992 seconds
+The sum is 0
+Error!
+N = 5000 | p = 100 | compute time: 3.5783720020 seconds
+The sum is 0
+Error!
+N = 6000 | p = 100 | compute time: 6.1809885388 seconds
+The sum is 0
+Error!
+N = 6000 | p = 100 | compute time: 6.1809599414 seconds
+The sum is 0
+Error!
+N = 6000 | p = 100 | compute time: 6.1809646729 seconds
+The sum is 0
+Error!
+N = 6000 | p = 100 | compute time: 6.1809608228 seconds
+The sum is 0
+Error!
+N = 6000 | p = 100 | compute time: 6.1809891418 seconds
+The sum is 0
+Error!
+N = 7000 | p = 100 | compute time: 9.8131768030 seconds
+The sum is 0
+Error!
+N = 7000 | p = 100 | compute time: 9.8131556738 seconds
+The sum is 0
+Error!
+N = 7000 | p = 100 | compute time: 9.8131591760 seconds
+The sum is 0
+Error!
+N = 7000 | p = 100 | compute time: 9.8131702161 seconds
+The sum is 0
+Error!
+N = 7000 | p = 100 | compute time: 9.8131677112 seconds
+The sum is 0
+Error!
+N = 8000 | p = 100 | compute time: 14.6465893970 seconds
+The sum is 0
+Error!
+N = 8000 | p = 100 | compute time: 14.6465586890 seconds
+The sum is 0
+Error!
+N = 8000 | p = 100 | compute time: 14.6465793774 seconds
+The sum is 0
+Error!
+N = 8000 | p = 100 | compute time: 14.6466025708 seconds
+The sum is 0
+Error!
+N = 8000 | p = 100 | compute time: 14.6465943835 seconds
+The sum is 0
+Error!
+N = 9000 | p = 100 | compute time: 20.8527808618 seconds
+The sum is 0
+Error!
+N = 9000 | p = 100 | compute time: 20.8528208240 seconds
+The sum is 0
+Error!
+N = 9000 | p = 100 | compute time: 20.8527577380 seconds
+The sum is 0
+Error!
+N = 9000 | p = 100 | compute time: 20.8527564856 seconds
+The sum is 0
+Error!
+N = 9000 | p = 100 | compute time: 20.8527539575 seconds
+The sum is 0
+Error!
+N = 10000 | p = 100 | compute time: 28.6033613794 seconds
+The sum is 0
+Error!
+N = 10000 | p = 100 | compute time: 28.6033669690 seconds
+The sum is 0
+Error!
+N = 10000 | p = 100 | compute time: 28.6033686389 seconds
+The sum is 0
+Error!
+N = 10000 | p = 100 | compute time: 28.6033551636 seconds
+The sum is 0
+Error!
+N = 10000 | p = 100 | compute time: 28.6033838770 seconds
+The sum is 0
+Error!
+N = 11000 | p = 100 | compute time: 38.0699722339 seconds
+The sum is 0
+Error!
+N = 11000 | p = 100 | compute time: 38.0699557434 seconds
+The sum is 0
+Error!
+N = 11000 | p = 100 | compute time: 38.0699577148 seconds
+The sum is 0
+Error!
+N = 11000 | p = 100 | compute time: 38.0699586426 seconds
+The sum is 0
+Error!
+N = 11000 | p = 100 | compute time: 38.0699595007 seconds
+The sum is 0
+Error!
+N = 12000 | p = 100 | compute time: 49.4241660181 seconds
+The sum is 0
+Error!
+N = 12000 | p = 100 | compute time: 49.4241576685 seconds
+The sum is 0
+Error!
+N = 12000 | p = 100 | compute time: 49.4241971667 seconds
+The sum is 0
+Error!
+N = 12000 | p = 100 | compute time: 49.4241722803 seconds
+The sum is 0
+Error!
+N = 12000 | p = 100 | compute time: 49.4242009473 seconds
+The sum is 0
+Error!
+N = 13000 | p = 100 | compute time: 62.8375540039 seconds
+The sum is 0
+Error!
+N = 13000 | p = 100 | compute time: 62.8375562769 seconds
+The sum is 0
+Error!
+N = 13000 | p = 100 | compute time: 62.8375691260 seconds
+The sum is 0
+Error!
+N = 13000 | p = 100 | compute time: 62.8375717700 seconds
+The sum is 0
+Error!
+N = 13000 | p = 100 | compute time: 62.8375613330 seconds
+The sum is 0
+Error!
+N = 14000 | p = 100 | compute time: 78.4817552100 seconds
+The sum is 0
+Error!
+N = 14000 | p = 100 | compute time: 78.4817546533 seconds
+The sum is 0
+Error!
+N = 14000 | p = 100 | compute time: 78.4817669922 seconds
+The sum is 0
+Error!
+N = 14000 | p = 100 | compute time: 78.4817548853 seconds
+The sum is 0
+Error!
+N = 14000 | p = 100 | compute time: 78.4817567871 seconds
+The sum is 0
+Error!
+N = 15000 | p = 100 | compute time: 96.5283591528 seconds
+The sum is 0
+Error!
+N = 15000 | p = 100 | compute time: 96.5283536328 seconds
+The sum is 0
+Error!
+N = 15000 | p = 100 | compute time: 96.5283578772 seconds
+The sum is 0
+Error!
+N = 15000 | p = 100 | compute time: 96.5283552100 seconds
+The sum is 0
+Error!
+N = 15000 | p = 100 | compute time: 96.5283548621 seconds
+The sum is 0
+Error!
+N = 16000 | p = 100 | compute time: 117.1489597327 seconds
+The sum is 0
+Error!
+N = 16000 | p = 100 | compute time: 117.1489546533 seconds
+The sum is 0
+Error!
+N = 16000 | p = 100 | compute time: 117.1489543982 seconds
+The sum is 0
+Error!
+N = 16000 | p = 100 | compute time: 117.1489554419 seconds
+The sum is 0
+Error!
+N = 16000 | p = 100 | compute time: 117.1489562305 seconds
+The sum is 0
+Error!
