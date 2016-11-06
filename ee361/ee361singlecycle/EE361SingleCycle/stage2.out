@@ -1,0 +1,292 @@
+veriwell testbench-LEGLiteSingle-Stage2.V LEGLite-PC.V LEGLite-Parts.V LEGLite-Single.V LEGLite-Control.V IM1.V
+
+
+Veriwell version 2.8.7, 
+Copyright (C) 1993-2008 Elliot Mednick and Mark Hummel
+
+Veriwell comes with ABSOLUTELY NO WARRANTY; This is free
+software, and you are welcome to redistribute it under the
+terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License,
+or (at your option) any later version. 
+
+lxt  support compiled in
+lxt2 support compiled in
+
+Entering Phase I...
+Compiling source file : testbench-LEGLiteSingle-Stage2.V
+Compiling source file : LEGLite-PC.V
+Compiling source file : LEGLite-Parts.V
+Compiling source file : LEGLite-Single.V
+Compiling source file : LEGLite-Control.V
+Compiling source file : IM1.V
+
+Entering Phase II...
+Entering Phase III...
+No errors in compilation
+Top-level modules:
+   testbenchLEGLiteSingle
+   MUX4
+
+Instruction[pc]=[opcode,reg,reg,reg,imm]
+
+DataMemory[addr]=[read data, write data]
+
+Signals C-R-Sw-Disp[clock,reset,switch0,display]
+* Recall data memory addr = ALU output
+
+Instr[    x]=[000,000,0000,000,000] DataMem[    x]=[    0,    x] C-R-Sw-Dsp[0,0,1,xxxxxxx] a-b-c-d-e-f[    0,    0,    0,    x,    x,    0]
+Instr[    x]=[000,000,0000,000,000] DataMem[    x]=[    0,    x] C-R-Sw-Dsp[1,0,1,xxxxxxx] a-b-c-d-e-f[    0,    0,    0,    x,    x,    0]
+Instr[    x]=[000,000,0000,000,000] DataMem[    x]=[    0,    x] C-R-Sw-Dsp[0,1,1,xxxxxxx] a-b-c-d-e-f[    0,    0,    0,    0,    x,    0]
+Instr[    0]=[110,000,0011,111,010] DataMem[    3]=[    0,    x] C-R-Sw-Dsp[1,1,1,xxxxxxx] a-b-c-d-e-f[    3,    0,    0,    0,    0,    0]
+Instr[    0]=[110,000,0011,111,010] DataMem[    3]=[    0,    x] C-R-Sw-Dsp[0,0,1,xxxxxxx] a-b-c-d-e-f[    3,    0,    0,    2,    0,    0]
+Instr[    2]=[000,111,0000,111,100] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[1,0,1,xxxxxxx] a-b-c-d-e-f[65520,    0,    1,    4,    2,    7]
+Instr[    2]=[000,111,0000,111,100] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[0,0,1,xxxxxxx] a-b-c-d-e-f[65520,    0,    1,    4,    2,    7]
+Instr[    4]=[101,111,1110,000,010] DataMem[    3]=[    0,    3] C-R-Sw-Dsp[1,0,1,xxxxxxx] a-b-c-d-e-f[65534,    1,    0,    6,    4,    2]
+Instr[    4]=[101,111,1110,000,010] DataMem[    3]=[    0,    3] C-R-Sw-Dsp[0,0,1,xxxxxxx] a-b-c-d-e-f[65534,    1,    0,    6,    4,    2]
+Instr[    6]=[110,000,0101,100,100] DataMem[    5]=[    0,    x] C-R-Sw-Dsp[1,0,1,xxxxxxx] a-b-c-d-e-f[    5,    0,    0,    8,    6,    0]
+Instr[    6]=[110,000,0101,100,100] DataMem[    5]=[    0,    x] C-R-Sw-Dsp[0,0,1,xxxxxxx] a-b-c-d-e-f[    5,    0,    0,    8,    6,    0]
+Instr[    8]=[110,111,1111,010,010] DataMem[    2]=[    0,    0] C-R-Sw-Dsp[1,0,1,xxxxxxx] a-b-c-d-e-f[65535,    0,    0,   10,    8,    7]
+Instr[    8]=[110,111,1111,010,010] DataMem[    2]=[    0,    0] C-R-Sw-Dsp[0,0,1,xxxxxxx] a-b-c-d-e-f[65535,    0,    0,   10,    8,    7]
+Instr[   10]=[101,111,1101,000,111] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[1,0,1,xxxxxxx] a-b-c-d-e-f[65533,    1,    1,    4,   10,    7]
+Instr[   10]=[101,111,1101,000,111] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[0,0,1,xxxxxxx] a-b-c-d-e-f[65533,    1,    1,    4,   10,    7]
+Instr[    4]=[101,111,1110,000,010] DataMem[    2]=[    0,    2] C-R-Sw-Dsp[1,0,1,xxxxxxx] a-b-c-d-e-f[65534,    1,    0,    6,    4,    2]
+Instr[    4]=[101,111,1110,000,010] DataMem[    2]=[    0,    2] C-R-Sw-Dsp[0,0,1,xxxxxxx] a-b-c-d-e-f[65534,    1,    0,    6,    4,    2]
+Instr[    6]=[110,000,0101,100,100] DataMem[   10]=[    0,    x] C-R-Sw-Dsp[1,0,1,xxxxxxx] a-b-c-d-e-f[    5,    0,    0,    8,    6,    0]
+Instr[    6]=[110,000,0101,100,100] DataMem[   10]=[    0,    x] C-R-Sw-Dsp[0,0,1,xxxxxxx] a-b-c-d-e-f[    5,    0,    0,    8,    6,    0]
+Instr[    8]=[110,111,1111,010,010] DataMem[    1]=[    0,    0] C-R-Sw-Dsp[1,0,1,xxxxxxx] a-b-c-d-e-f[65535,    0,    0,   10,    8,    7]
+Instr[    8]=[110,111,1111,010,010] DataMem[    1]=[    0,    0] C-R-Sw-Dsp[0,0,1,xxxxxxx] a-b-c-d-e-f[65535,    0,    0,   10,    8,    7]
+Instr[   10]=[101,111,1101,000,111] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[1,0,1,xxxxxxx] a-b-c-d-e-f[65533,    1,    1,    4,   10,    7]
+Instr[   10]=[101,111,1101,000,111] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[0,0,1,xxxxxxx] a-b-c-d-e-f[65533,    1,    1,    4,   10,    7]
+Instr[    4]=[101,111,1110,000,010] DataMem[    1]=[    0,    1] C-R-Sw-Dsp[1,0,1,xxxxxxx] a-b-c-d-e-f[65534,    1,    0,    6,    4,    2]
+Instr[    4]=[101,111,1110,000,010] DataMem[    1]=[    0,    1] C-R-Sw-Dsp[0,0,1,xxxxxxx] a-b-c-d-e-f[65534,    1,    0,    6,    4,    2]
+Instr[    6]=[110,000,0101,100,100] DataMem[   15]=[    0,    x] C-R-Sw-Dsp[1,0,1,xxxxxxx] a-b-c-d-e-f[    5,    0,    0,    8,    6,    0]
+Instr[    6]=[110,000,0101,100,100] DataMem[   15]=[    0,    x] C-R-Sw-Dsp[0,0,1,xxxxxxx] a-b-c-d-e-f[    5,    0,    0,    8,    6,    0]
+Instr[    8]=[110,111,1111,010,010] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[1,0,1,xxxxxxx] a-b-c-d-e-f[65535,    0,    1,   10,    8,    7]
+Instr[    8]=[110,111,1111,010,010] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[0,0,1,xxxxxxx] a-b-c-d-e-f[65535,    0,    1,   10,    8,    7]
+Instr[   10]=[101,111,1101,000,111] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[1,0,1,xxxxxxx] a-b-c-d-e-f[65533,    1,    1,    4,   10,    7]
+Instr[   10]=[101,111,1101,000,111] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[0,0,1,xxxxxxx] a-b-c-d-e-f[65533,    1,    1,    4,   10,    7]
+Instr[    4]=[101,111,1110,000,010] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[1,0,1,xxxxxxx] a-b-c-d-e-f[65534,    1,    1,    0,    4,    2]
+Instr[    4]=[101,111,1110,000,010] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[0,0,1,xxxxxxx] a-b-c-d-e-f[65534,    1,    1,    0,    4,    2]
+Instr[    0]=[110,000,0011,111,010] DataMem[    3]=[    0,    x] C-R-Sw-Dsp[1,0,1,xxxxxxx] a-b-c-d-e-f[    3,    0,    0,    2,    0,    0]
+Instr[    0]=[110,000,0011,111,010] DataMem[    3]=[    0,    x] C-R-Sw-Dsp[0,0,1,xxxxxxx] a-b-c-d-e-f[    3,    0,    0,    2,    0,    0]
+Instr[    2]=[000,111,0000,111,100] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[1,0,1,xxxxxxx] a-b-c-d-e-f[65520,    0,    1,    4,    2,    7]
+Instr[    2]=[000,111,0000,111,100] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[0,0,1,xxxxxxx] a-b-c-d-e-f[65520,    0,    1,    4,    2,    7]
+Instr[    4]=[101,111,1110,000,010] DataMem[    3]=[    0,    3] C-R-Sw-Dsp[1,0,1,xxxxxxx] a-b-c-d-e-f[65534,    1,    0,    6,    4,    2]
+Instr[    4]=[101,111,1110,000,010] DataMem[    3]=[    0,    3] C-R-Sw-Dsp[0,0,1,xxxxxxx] a-b-c-d-e-f[65534,    1,    0,    6,    4,    2]
+Instr[    6]=[110,000,0101,100,100] DataMem[    5]=[    0,    x] C-R-Sw-Dsp[1,0,1,xxxxxxx] a-b-c-d-e-f[    5,    0,    0,    8,    6,    0]
+Instr[    6]=[110,000,0101,100,100] DataMem[    5]=[    0,    x] C-R-Sw-Dsp[0,0,1,xxxxxxx] a-b-c-d-e-f[    5,    0,    0,    8,    6,    0]
+Instr[    8]=[110,111,1111,010,010] DataMem[    2]=[    0,    0] C-R-Sw-Dsp[1,0,1,xxxxxxx] a-b-c-d-e-f[65535,    0,    0,   10,    8,    7]
+Instr[    8]=[110,111,1111,010,010] DataMem[    2]=[    0,    0] C-R-Sw-Dsp[0,0,1,xxxxxxx] a-b-c-d-e-f[65535,    0,    0,   10,    8,    7]
+Instr[   10]=[101,111,1101,000,111] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[1,0,1,xxxxxxx] a-b-c-d-e-f[65533,    1,    1,    4,   10,    7]
+Instr[   10]=[101,111,1101,000,111] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[0,0,1,xxxxxxx] a-b-c-d-e-f[65533,    1,    1,    4,   10,    7]
+Instr[    4]=[101,111,1110,000,010] DataMem[    2]=[    0,    2] C-R-Sw-Dsp[1,0,1,xxxxxxx] a-b-c-d-e-f[65534,    1,    0,    6,    4,    2]
+Instr[    4]=[101,111,1110,000,010] DataMem[    2]=[    0,    2] C-R-Sw-Dsp[0,0,1,xxxxxxx] a-b-c-d-e-f[65534,    1,    0,    6,    4,    2]
+Instr[    6]=[110,000,0101,100,100] DataMem[   10]=[    0,    x] C-R-Sw-Dsp[1,0,1,xxxxxxx] a-b-c-d-e-f[    5,    0,    0,    8,    6,    0]
+Instr[    6]=[110,000,0101,100,100] DataMem[   10]=[    0,    x] C-R-Sw-Dsp[0,0,1,xxxxxxx] a-b-c-d-e-f[    5,    0,    0,    8,    6,    0]
+Instr[    8]=[110,111,1111,010,010] DataMem[    1]=[    0,    0] C-R-Sw-Dsp[1,0,1,xxxxxxx] a-b-c-d-e-f[65535,    0,    0,   10,    8,    7]
+Instr[    8]=[110,111,1111,010,010] DataMem[    1]=[    0,    0] C-R-Sw-Dsp[0,0,1,xxxxxxx] a-b-c-d-e-f[65535,    0,    0,   10,    8,    7]
+Instr[   10]=[101,111,1101,000,111] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[1,0,1,xxxxxxx] a-b-c-d-e-f[65533,    1,    1,    4,   10,    7]
+Instr[   10]=[101,111,1101,000,111] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[0,0,1,xxxxxxx] a-b-c-d-e-f[65533,    1,    1,    4,   10,    7]
+Instr[    4]=[101,111,1110,000,010] DataMem[    1]=[    0,    1] C-R-Sw-Dsp[1,0,1,xxxxxxx] a-b-c-d-e-f[65534,    1,    0,    6,    4,    2]
+Instr[    4]=[101,111,1110,000,010] DataMem[    1]=[    0,    1] C-R-Sw-Dsp[0,0,0,xxxxxxx] a-b-c-d-e-f[65534,    1,    0,    6,    4,    2]
+Instr[    6]=[110,000,0101,100,100] DataMem[   15]=[    0,    x] C-R-Sw-Dsp[1,0,0,xxxxxxx] a-b-c-d-e-f[    5,    0,    0,    8,    6,    0]
+Instr[    6]=[110,000,0101,100,100] DataMem[   15]=[    0,    x] C-R-Sw-Dsp[0,0,0,xxxxxxx] a-b-c-d-e-f[    5,    0,    0,    8,    6,    0]
+Instr[    8]=[110,111,1111,010,010] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[1,0,0,xxxxxxx] a-b-c-d-e-f[65535,    0,    1,   10,    8,    7]
+Instr[    8]=[110,111,1111,010,010] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[0,0,0,xxxxxxx] a-b-c-d-e-f[65535,    0,    1,   10,    8,    7]
+Instr[   10]=[101,111,1101,000,111] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[1,0,0,xxxxxxx] a-b-c-d-e-f[65533,    1,    1,    4,   10,    7]
+Instr[   10]=[101,111,1101,000,111] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[0,0,0,xxxxxxx] a-b-c-d-e-f[65533,    1,    1,    4,   10,    7]
+Instr[    4]=[101,111,1110,000,010] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[1,0,0,xxxxxxx] a-b-c-d-e-f[65534,    1,    1,    0,    4,    2]
+Instr[    4]=[101,111,1110,000,010] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[0,0,0,xxxxxxx] a-b-c-d-e-f[65534,    1,    1,    0,    4,    2]
+Instr[    0]=[110,000,0011,111,010] DataMem[    3]=[    0,    x] C-R-Sw-Dsp[1,0,0,xxxxxxx] a-b-c-d-e-f[    3,    0,    0,    2,    0,    0]
+Instr[    0]=[110,000,0011,111,010] DataMem[    3]=[    0,    x] C-R-Sw-Dsp[0,0,0,xxxxxxx] a-b-c-d-e-f[    3,    0,    0,    2,    0,    0]
+Instr[    2]=[000,111,0000,111,100] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[1,0,0,xxxxxxx] a-b-c-d-e-f[65520,    0,    1,    4,    2,    7]
+Instr[    2]=[000,111,0000,111,100] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[0,0,0,xxxxxxx] a-b-c-d-e-f[65520,    0,    1,    4,    2,    7]
+Instr[    4]=[101,111,1110,000,010] DataMem[    3]=[    0,    3] C-R-Sw-Dsp[1,0,0,xxxxxxx] a-b-c-d-e-f[65534,    1,    0,    6,    4,    2]
+Instr[    4]=[101,111,1110,000,010] DataMem[    3]=[    0,    3] C-R-Sw-Dsp[0,0,0,xxxxxxx] a-b-c-d-e-f[65534,    1,    0,    6,    4,    2]
+Instr[    6]=[110,000,0101,100,100] DataMem[    5]=[    0,    x] C-R-Sw-Dsp[1,0,0,xxxxxxx] a-b-c-d-e-f[    5,    0,    0,    8,    6,    0]
+Instr[    6]=[110,000,0101,100,100] DataMem[    5]=[    0,    x] C-R-Sw-Dsp[0,0,0,xxxxxxx] a-b-c-d-e-f[    5,    0,    0,    8,    6,    0]
+Instr[    8]=[110,111,1111,010,010] DataMem[    2]=[    0,    0] C-R-Sw-Dsp[1,0,0,xxxxxxx] a-b-c-d-e-f[65535,    0,    0,   10,    8,    7]
+Instr[    8]=[110,111,1111,010,010] DataMem[    2]=[    0,    0] C-R-Sw-Dsp[0,0,0,xxxxxxx] a-b-c-d-e-f[65535,    0,    0,   10,    8,    7]
+Instr[   10]=[101,111,1101,000,111] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[1,0,0,xxxxxxx] a-b-c-d-e-f[65533,    1,    1,    4,   10,    7]
+Instr[   10]=[101,111,1101,000,111] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[0,0,0,xxxxxxx] a-b-c-d-e-f[65533,    1,    1,    4,   10,    7]
+Instr[    4]=[101,111,1110,000,010] DataMem[    2]=[    0,    2] C-R-Sw-Dsp[1,0,0,xxxxxxx] a-b-c-d-e-f[65534,    1,    0,    6,    4,    2]
+Instr[    4]=[101,111,1110,000,010] DataMem[    2]=[    0,    2] C-R-Sw-Dsp[0,0,0,xxxxxxx] a-b-c-d-e-f[65534,    1,    0,    6,    4,    2]
+Instr[    6]=[110,000,0101,100,100] DataMem[   10]=[    0,    x] C-R-Sw-Dsp[1,0,0,xxxxxxx] a-b-c-d-e-f[    5,    0,    0,    8,    6,    0]
+Instr[    6]=[110,000,0101,100,100] DataMem[   10]=[    0,    x] C-R-Sw-Dsp[0,0,0,xxxxxxx] a-b-c-d-e-f[    5,    0,    0,    8,    6,    0]
+Instr[    8]=[110,111,1111,010,010] DataMem[    1]=[    0,    0] C-R-Sw-Dsp[1,0,0,xxxxxxx] a-b-c-d-e-f[65535,    0,    0,   10,    8,    7]
+Instr[    8]=[110,111,1111,010,010] DataMem[    1]=[    0,    0] C-R-Sw-Dsp[0,0,0,xxxxxxx] a-b-c-d-e-f[65535,    0,    0,   10,    8,    7]
+Instr[   10]=[101,111,1101,000,111] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[1,0,0,xxxxxxx] a-b-c-d-e-f[65533,    1,    1,    4,   10,    7]
+Instr[   10]=[101,111,1101,000,111] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[0,0,0,xxxxxxx] a-b-c-d-e-f[65533,    1,    1,    4,   10,    7]
+Instr[    4]=[101,111,1110,000,010] DataMem[    1]=[    0,    1] C-R-Sw-Dsp[1,0,0,xxxxxxx] a-b-c-d-e-f[65534,    1,    0,    6,    4,    2]
+Instr[    4]=[101,111,1110,000,010] DataMem[    1]=[    0,    1] C-R-Sw-Dsp[0,0,0,xxxxxxx] a-b-c-d-e-f[65534,    1,    0,    6,    4,    2]
+Instr[    6]=[110,000,0101,100,100] DataMem[   15]=[    0,    x] C-R-Sw-Dsp[1,0,0,xxxxxxx] a-b-c-d-e-f[    5,    0,    0,    8,    6,    0]
+Instr[    6]=[110,000,0101,100,100] DataMem[   15]=[    0,    x] C-R-Sw-Dsp[0,0,0,xxxxxxx] a-b-c-d-e-f[    5,    0,    0,    8,    6,    0]
+Instr[    8]=[110,111,1111,010,010] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[1,0,0,xxxxxxx] a-b-c-d-e-f[65535,    0,    1,   10,    8,    7]
+Instr[    8]=[110,111,1111,010,010] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[0,0,0,xxxxxxx] a-b-c-d-e-f[65535,    0,    1,   10,    8,    7]
+Instr[   10]=[101,111,1101,000,111] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[1,0,0,xxxxxxx] a-b-c-d-e-f[65533,    1,    1,    4,   10,    7]
+Instr[   10]=[101,111,1101,000,111] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[0,0,0,xxxxxxx] a-b-c-d-e-f[65533,    1,    1,    4,   10,    7]
+Instr[    4]=[101,111,1110,000,010] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[1,0,0,xxxxxxx] a-b-c-d-e-f[65534,    1,    1,    0,    4,    2]
+Instr[    4]=[101,111,1110,000,010] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[0,0,0,xxxxxxx] a-b-c-d-e-f[65534,    1,    1,    0,    4,    2]
+Instr[    0]=[110,000,0011,111,010] DataMem[    3]=[    0,    x] C-R-Sw-Dsp[1,0,0,xxxxxxx] a-b-c-d-e-f[    3,    0,    0,    2,    0,    0]
+Instr[    0]=[110,000,0011,111,010] DataMem[    3]=[    0,    x] C-R-Sw-Dsp[0,0,0,xxxxxxx] a-b-c-d-e-f[    3,    0,    0,    2,    0,    0]
+Instr[    2]=[000,111,0000,111,100] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[1,0,0,xxxxxxx] a-b-c-d-e-f[65520,    0,    1,    4,    2,    7]
+Instr[    2]=[000,111,0000,111,100] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[0,0,0,xxxxxxx] a-b-c-d-e-f[65520,    0,    1,    4,    2,    7]
+Instr[    4]=[101,111,1110,000,010] DataMem[    3]=[    0,    3] C-R-Sw-Dsp[1,0,0,xxxxxxx] a-b-c-d-e-f[65534,    1,    0,    6,    4,    2]
+Instr[    4]=[101,111,1110,000,010] DataMem[    3]=[    0,    3] C-R-Sw-Dsp[0,0,0,xxxxxxx] a-b-c-d-e-f[65534,    1,    0,    6,    4,    2]
+Instr[    6]=[110,000,0101,100,100] DataMem[    5]=[    0,    x] C-R-Sw-Dsp[1,0,0,xxxxxxx] a-b-c-d-e-f[    5,    0,    0,    8,    6,    0]
+Instr[    6]=[110,000,0101,100,100] DataMem[    5]=[    0,    x] C-R-Sw-Dsp[0,0,0,xxxxxxx] a-b-c-d-e-f[    5,    0,    0,    8,    6,    0]
+Instr[    8]=[110,111,1111,010,010] DataMem[    2]=[    0,    0] C-R-Sw-Dsp[1,0,0,xxxxxxx] a-b-c-d-e-f[65535,    0,    0,   10,    8,    7]
+Instr[    8]=[110,111,1111,010,010] DataMem[    2]=[    0,    0] C-R-Sw-Dsp[0,0,0,xxxxxxx] a-b-c-d-e-f[65535,    0,    0,   10,    8,    7]
+Instr[   10]=[101,111,1101,000,111] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[1,0,0,xxxxxxx] a-b-c-d-e-f[65533,    1,    1,    4,   10,    7]
+Exiting Veriwell at time 104
+0 Errors, 0 Warnings, Compile time = 0.0, Load time = 0.0, Simulation time = 0.0
+
+Normal exit
+Thank you for using Veriwell
+veriwell testbench-LEGLiteSingle-Stage2.V LEGLite-PC.V LEGLite-Parts.V LEGLite-Single.V LEGLite-Control.V IM1.V
+
+
+Veriwell version 2.8.7, 
+Copyright (C) 1993-2008 Elliot Mednick and Mark Hummel
+
+Veriwell comes with ABSOLUTELY NO WARRANTY; This is free
+software, and you are welcome to redistribute it under the
+terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License,
+or (at your option) any later version. 
+
+lxt  support compiled in
+lxt2 support compiled in
+
+Entering Phase I...
+Compiling source file : testbench-LEGLiteSingle-Stage2.V
+Compiling source file : LEGLite-PC.V
+Compiling source file : LEGLite-Parts.V
+Compiling source file : LEGLite-Single.V
+Compiling source file : LEGLite-Control.V
+Compiling source file : IM1.V
+
+Entering Phase II...
+Entering Phase III...
+No errors in compilation
+Top-level modules:
+   testbenchLEGLiteSingle
+   MUX4
+
+Instruction[pc]=[opcode,reg,reg,reg,imm]
+
+DataMemory[addr]=[read data, write data]
+
+Signals C-R-Sw-Disp[clock,reset,switch0,display]
+* Recall data memory addr = ALU output
+
+Instr[    x]=[000,000,0000,000,000] DataMem[    x]=[    0,    x] C-R-Sw-Dsp[0,0,1,xxxxxxx] 
+Instr[    x]=[000,000,0000,000,000] DataMem[    x]=[    0,    x] C-R-Sw-Dsp[1,0,1,xxxxxxx] 
+Instr[    x]=[000,000,0000,000,000] DataMem[    x]=[    0,    x] C-R-Sw-Dsp[0,1,1,xxxxxxx] 
+Instr[    0]=[110,000,0011,111,010] DataMem[    3]=[    0,    x] C-R-Sw-Dsp[1,1,1,xxxxxxx] 
+Instr[    0]=[110,000,0011,111,010] DataMem[    3]=[    0,    x] C-R-Sw-Dsp[0,0,1,xxxxxxx] 
+Instr[    2]=[000,111,0000,111,100] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[1,0,1,xxxxxxx] 
+Instr[    2]=[000,111,0000,111,100] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[0,0,1,xxxxxxx] 
+Instr[    4]=[101,111,1110,000,010] DataMem[    3]=[    0,    3] C-R-Sw-Dsp[1,0,1,xxxxxxx] 
+Instr[    4]=[101,111,1110,000,010] DataMem[    3]=[    0,    3] C-R-Sw-Dsp[0,0,1,xxxxxxx] 
+Instr[    6]=[110,000,0101,100,100] DataMem[    5]=[    0,    x] C-R-Sw-Dsp[1,0,1,xxxxxxx] 
+Instr[    6]=[110,000,0101,100,100] DataMem[    5]=[    0,    x] C-R-Sw-Dsp[0,0,1,xxxxxxx] 
+Instr[    8]=[110,111,1111,010,010] DataMem[    2]=[    0,    0] C-R-Sw-Dsp[1,0,1,xxxxxxx] 
+Instr[    8]=[110,111,1111,010,010] DataMem[    2]=[    0,    0] C-R-Sw-Dsp[0,0,1,xxxxxxx] 
+Instr[   10]=[101,111,1101,000,111] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[1,0,1,xxxxxxx] 
+Instr[   10]=[101,111,1101,000,111] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[0,0,1,xxxxxxx] 
+Instr[    4]=[101,111,1110,000,010] DataMem[    2]=[    0,    2] C-R-Sw-Dsp[1,0,1,xxxxxxx] 
+Instr[    4]=[101,111,1110,000,010] DataMem[    2]=[    0,    2] C-R-Sw-Dsp[0,0,1,xxxxxxx] 
+Instr[    6]=[110,000,0101,100,100] DataMem[   10]=[    0,    x] C-R-Sw-Dsp[1,0,1,xxxxxxx] 
+Instr[    6]=[110,000,0101,100,100] DataMem[   10]=[    0,    x] C-R-Sw-Dsp[0,0,1,xxxxxxx] 
+Instr[    8]=[110,111,1111,010,010] DataMem[    1]=[    0,    0] C-R-Sw-Dsp[1,0,1,xxxxxxx] 
+Instr[    8]=[110,111,1111,010,010] DataMem[    1]=[    0,    0] C-R-Sw-Dsp[0,0,1,xxxxxxx] 
+Instr[   10]=[101,111,1101,000,111] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[1,0,1,xxxxxxx] 
+Instr[   10]=[101,111,1101,000,111] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[0,0,1,xxxxxxx] 
+Instr[    4]=[101,111,1110,000,010] DataMem[    1]=[    0,    1] C-R-Sw-Dsp[1,0,1,xxxxxxx] 
+Instr[    4]=[101,111,1110,000,010] DataMem[    1]=[    0,    1] C-R-Sw-Dsp[0,0,1,xxxxxxx] 
+Instr[    6]=[110,000,0101,100,100] DataMem[   15]=[    0,    x] C-R-Sw-Dsp[1,0,1,xxxxxxx] 
+Instr[    6]=[110,000,0101,100,100] DataMem[   15]=[    0,    x] C-R-Sw-Dsp[0,0,1,xxxxxxx] 
+Instr[    8]=[110,111,1111,010,010] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[1,0,1,xxxxxxx] 
+Instr[    8]=[110,111,1111,010,010] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[0,0,1,xxxxxxx] 
+Instr[   10]=[101,111,1101,000,111] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[1,0,1,xxxxxxx] 
+Instr[   10]=[101,111,1101,000,111] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[0,0,1,xxxxxxx] 
+Instr[    4]=[101,111,1110,000,010] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[1,0,1,xxxxxxx] 
+Instr[    4]=[101,111,1110,000,010] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[0,0,1,xxxxxxx] 
+Instr[    0]=[110,000,0011,111,010] DataMem[    3]=[    0,    x] C-R-Sw-Dsp[1,0,1,xxxxxxx] 
+Instr[    0]=[110,000,0011,111,010] DataMem[    3]=[    0,    x] C-R-Sw-Dsp[0,0,1,xxxxxxx] 
+Instr[    2]=[000,111,0000,111,100] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[1,0,1,xxxxxxx] 
+Instr[    2]=[000,111,0000,111,100] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[0,0,1,xxxxxxx] 
+Instr[    4]=[101,111,1110,000,010] DataMem[    3]=[    0,    3] C-R-Sw-Dsp[1,0,1,xxxxxxx] 
+Instr[    4]=[101,111,1110,000,010] DataMem[    3]=[    0,    3] C-R-Sw-Dsp[0,0,1,xxxxxxx] 
+Instr[    6]=[110,000,0101,100,100] DataMem[    5]=[    0,    x] C-R-Sw-Dsp[1,0,1,xxxxxxx] 
+Instr[    6]=[110,000,0101,100,100] DataMem[    5]=[    0,    x] C-R-Sw-Dsp[0,0,1,xxxxxxx] 
+Instr[    8]=[110,111,1111,010,010] DataMem[    2]=[    0,    0] C-R-Sw-Dsp[1,0,1,xxxxxxx] 
+Instr[    8]=[110,111,1111,010,010] DataMem[    2]=[    0,    0] C-R-Sw-Dsp[0,0,1,xxxxxxx] 
+Instr[   10]=[101,111,1101,000,111] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[1,0,1,xxxxxxx] 
+Instr[   10]=[101,111,1101,000,111] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[0,0,1,xxxxxxx] 
+Instr[    4]=[101,111,1110,000,010] DataMem[    2]=[    0,    2] C-R-Sw-Dsp[1,0,1,xxxxxxx] 
+Instr[    4]=[101,111,1110,000,010] DataMem[    2]=[    0,    2] C-R-Sw-Dsp[0,0,1,xxxxxxx] 
+Instr[    6]=[110,000,0101,100,100] DataMem[   10]=[    0,    x] C-R-Sw-Dsp[1,0,1,xxxxxxx] 
+Instr[    6]=[110,000,0101,100,100] DataMem[   10]=[    0,    x] C-R-Sw-Dsp[0,0,1,xxxxxxx] 
+Instr[    8]=[110,111,1111,010,010] DataMem[    1]=[    0,    0] C-R-Sw-Dsp[1,0,1,xxxxxxx] 
+Instr[    8]=[110,111,1111,010,010] DataMem[    1]=[    0,    0] C-R-Sw-Dsp[0,0,1,xxxxxxx] 
+Instr[   10]=[101,111,1101,000,111] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[1,0,1,xxxxxxx] 
+Instr[   10]=[101,111,1101,000,111] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[0,0,1,xxxxxxx] 
+Instr[    4]=[101,111,1110,000,010] DataMem[    1]=[    0,    1] C-R-Sw-Dsp[1,0,1,xxxxxxx] 
+Instr[    4]=[101,111,1110,000,010] DataMem[    1]=[    0,    1] C-R-Sw-Dsp[0,0,0,xxxxxxx] 
+Instr[    6]=[110,000,0101,100,100] DataMem[   15]=[    0,    x] C-R-Sw-Dsp[1,0,0,xxxxxxx] 
+Instr[    6]=[110,000,0101,100,100] DataMem[   15]=[    0,    x] C-R-Sw-Dsp[0,0,0,xxxxxxx] 
+Instr[    8]=[110,111,1111,010,010] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[1,0,0,xxxxxxx] 
+Instr[    8]=[110,111,1111,010,010] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[0,0,0,xxxxxxx] 
+Instr[   10]=[101,111,1101,000,111] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[1,0,0,xxxxxxx] 
+Instr[   10]=[101,111,1101,000,111] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[0,0,0,xxxxxxx] 
+Instr[    4]=[101,111,1110,000,010] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[1,0,0,xxxxxxx] 
+Instr[    4]=[101,111,1110,000,010] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[0,0,0,xxxxxxx] 
+Instr[    0]=[110,000,0011,111,010] DataMem[    3]=[    0,    x] C-R-Sw-Dsp[1,0,0,xxxxxxx] 
+Instr[    0]=[110,000,0011,111,010] DataMem[    3]=[    0,    x] C-R-Sw-Dsp[0,0,0,xxxxxxx] 
+Instr[    2]=[000,111,0000,111,100] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[1,0,0,xxxxxxx] 
+Instr[    2]=[000,111,0000,111,100] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[0,0,0,xxxxxxx] 
+Instr[    4]=[101,111,1110,000,010] DataMem[    3]=[    0,    3] C-R-Sw-Dsp[1,0,0,xxxxxxx] 
+Instr[    4]=[101,111,1110,000,010] DataMem[    3]=[    0,    3] C-R-Sw-Dsp[0,0,0,xxxxxxx] 
+Instr[    6]=[110,000,0101,100,100] DataMem[    5]=[    0,    x] C-R-Sw-Dsp[1,0,0,xxxxxxx] 
+Instr[    6]=[110,000,0101,100,100] DataMem[    5]=[    0,    x] C-R-Sw-Dsp[0,0,0,xxxxxxx] 
+Instr[    8]=[110,111,1111,010,010] DataMem[    2]=[    0,    0] C-R-Sw-Dsp[1,0,0,xxxxxxx] 
+Instr[    8]=[110,111,1111,010,010] DataMem[    2]=[    0,    0] C-R-Sw-Dsp[0,0,0,xxxxxxx] 
+Instr[   10]=[101,111,1101,000,111] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[1,0,0,xxxxxxx] 
+Instr[   10]=[101,111,1101,000,111] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[0,0,0,xxxxxxx] 
+Instr[    4]=[101,111,1110,000,010] DataMem[    2]=[    0,    2] C-R-Sw-Dsp[1,0,0,xxxxxxx] 
+Instr[    4]=[101,111,1110,000,010] DataMem[    2]=[    0,    2] C-R-Sw-Dsp[0,0,0,xxxxxxx] 
+Instr[    6]=[110,000,0101,100,100] DataMem[   10]=[    0,    x] C-R-Sw-Dsp[1,0,0,xxxxxxx] 
+Instr[    6]=[110,000,0101,100,100] DataMem[   10]=[    0,    x] C-R-Sw-Dsp[0,0,0,xxxxxxx] 
+Instr[    8]=[110,111,1111,010,010] DataMem[    1]=[    0,    0] C-R-Sw-Dsp[1,0,0,xxxxxxx] 
+Instr[    8]=[110,111,1111,010,010] DataMem[    1]=[    0,    0] C-R-Sw-Dsp[0,0,0,xxxxxxx] 
+Instr[   10]=[101,111,1101,000,111] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[1,0,0,xxxxxxx] 
+Instr[   10]=[101,111,1101,000,111] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[0,0,0,xxxxxxx] 
+Instr[    4]=[101,111,1110,000,010] DataMem[    1]=[    0,    1] C-R-Sw-Dsp[1,0,0,xxxxxxx] 
+Instr[    4]=[101,111,1110,000,010] DataMem[    1]=[    0,    1] C-R-Sw-Dsp[0,0,0,xxxxxxx] 
+Instr[    6]=[110,000,0101,100,100] DataMem[   15]=[    0,    x] C-R-Sw-Dsp[1,0,0,xxxxxxx] 
+Instr[    6]=[110,000,0101,100,100] DataMem[   15]=[    0,    x] C-R-Sw-Dsp[0,0,0,xxxxxxx] 
+Instr[    8]=[110,111,1111,010,010] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[1,0,0,xxxxxxx] 
+Instr[    8]=[110,111,1111,010,010] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[0,0,0,xxxxxxx] 
+Instr[   10]=[101,111,1101,000,111] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[1,0,0,xxxxxxx] 
+Instr[   10]=[101,111,1101,000,111] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[0,0,0,xxxxxxx] 
+Instr[    4]=[101,111,1110,000,010] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[1,0,0,xxxxxxx] 
+Instr[    4]=[101,111,1110,000,010] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[0,0,0,xxxxxxx] 
+Instr[    0]=[110,000,0011,111,010] DataMem[    3]=[    0,    x] C-R-Sw-Dsp[1,0,0,xxxxxxx] 
+Instr[    0]=[110,000,0011,111,010] DataMem[    3]=[    0,    x] C-R-Sw-Dsp[0,0,0,xxxxxxx] 
+Instr[    2]=[000,111,0000,111,100] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[1,0,0,xxxxxxx] 
+Instr[    2]=[000,111,0000,111,100] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[0,0,0,xxxxxxx] 
+Instr[    4]=[101,111,1110,000,010] DataMem[    3]=[    0,    3] C-R-Sw-Dsp[1,0,0,xxxxxxx] 
+Instr[    4]=[101,111,1110,000,010] DataMem[    3]=[    0,    3] C-R-Sw-Dsp[0,0,0,xxxxxxx] 
+Instr[    6]=[110,000,0101,100,100] DataMem[    5]=[    0,    x] C-R-Sw-Dsp[1,0,0,xxxxxxx] 
+Instr[    6]=[110,000,0101,100,100] DataMem[    5]=[    0,    x] C-R-Sw-Dsp[0,0,0,xxxxxxx] 
+Instr[    8]=[110,111,1111,010,010] DataMem[    2]=[    0,    0] C-R-Sw-Dsp[1,0,0,xxxxxxx] 
+Instr[    8]=[110,111,1111,010,010] DataMem[    2]=[    0,    0] C-R-Sw-Dsp[0,0,0,xxxxxxx] 
+Instr[   10]=[101,111,1101,000,111] DataMem[    0]=[    0,    0] C-R-Sw-Dsp[1,0,0,xxxxxxx] 
+Exiting Veriwell at time 104
+0 Errors, 0 Warnings, Compile time = 0.0, Load time = 0.0, Simulation time = 0.0
+
+Normal exit
+Thank you for using Veriwell
