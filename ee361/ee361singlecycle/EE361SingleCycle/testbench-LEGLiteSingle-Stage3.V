@@ -82,7 +82,7 @@ initial
 
 initial
 	begin
-	$monitor("Instr[%d]=[%b,%b,%b,%b,%b] DataMem[%h]=[%b,%b] C-R-Sw0-Dsp[%b,%b,%b,%b]",
+	$monitor("Instr[%d]=[%b,%b,%b,%b,%b] DataMem[%h]=[%d,%d] C-R-Sw0-Dsp[%b,%b,%b,%b]",
 		iaddr,
 		idata[15:13],
 		idata[12:10],
