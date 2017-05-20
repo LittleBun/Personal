@@ -1,0 +1,80 @@
+	Presentation Grading Form 		Speaker: Kainalu Matthews	
+
+TOPIC:   
+
+o Please make notes during the presentation
+o Please type your comments and email me in the same day of the presentation
+o Please be specific as much as you could 
+
+* Before the presentation,   
+o Please read the summary prepared by the speaker to make sure the grader understands the basic of presentation. 
+o Preparing Intelligent Questions: please prepare at least three proper questions for the presenter although we may not ask all questions during the presentation,. Please write down your questions (and your expected answers) based on the speaker’s summary.  (PS:  It is ok if you don’t know the answer yet. You may come up new questions during the discussions.)
+
+1) Q1: 
+A1: 
+ 
+
+2) Q2: 
+A2: 
+
+
+3) Q3: 
+A3: 
+
+
+
+* After Presentation, please summarize what you learn from the presentation
+
+* One sentence summary: the idea
+It introduce the new IoT topic and their applications with vulnerabilities.
+
+* One paragraph summary (5-10 sentences): method/design trick/tools
+
+It introduced the common concept of IoT, and problem of IoT. It present a special IoT case with potential vulnerabilities. It discussed general system of IoT. Some proposed solutions are discussed.
+
+
+
+
+
+o Which areas do you think she/he can improve? (Please find at least one.)
+* If you do it, how would you improve (Please be specific as much as possible)?
+
+
+I would give a more deep example of IoT.
+
+* Scores: 1 to 10 (Please write down the specific reasons why you think she/he deserve a full credit, or how you deduct credits and your reasons.)
+
+* Preparation: 
+
+1) Material.			
+10. Interested topic.
+
+
+2) Slides
+
+9. Can be more organized.
+
+
+
+* Presentation: 
+
+3) Clarity.
+	
+10. Speech is clear.
+
+
+	
+4) Technical strength
+
+9. Can be more technical.
+
+
+
+
+5) Handling the questions
+10. Good at answering questions.
+
+
+
+Others  (What you think about the grading or presentation which not cover in the above.) 
+
