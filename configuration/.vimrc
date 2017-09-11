@@ -8,6 +8,8 @@ set showcmd
 set expandtab
 set shiftwidth=3
 set softtabstop=3
+set laststatus=2
+set statusline+=%f
 
 " enable filetype detection:
 filetype on
